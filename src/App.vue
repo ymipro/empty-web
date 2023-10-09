@@ -8,7 +8,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="羊米POST" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -18,6 +18,10 @@ import HelloWorld from './components/HelloWorld.vue'
   </header>
 
   <RouterView />
+
+  <div class="footer">
+    <a href="https://beian.miit.gov.cn/" target="_blank" style="margin: 0 auto;">京ICP备19035060号-1</a>
+  </div>
 </template>
 
 <style scoped>
@@ -81,5 +85,15 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  border: 1px solid gray;
+  display: flex;
+  place-items: center;
 }
 </style>
